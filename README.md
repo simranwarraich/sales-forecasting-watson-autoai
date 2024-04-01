@@ -13,6 +13,7 @@ This section outlines the key files and resources included in this project:
    
 # Step-by-Step Guide: Building an ML Pipeline for Sales Fprecasting with Watson AutoAI (Overview)
 This section provides a high-level overview of building a machine learning pipeline with Watson AutoAI in IBM Cloud Pak for Data. 
+<p><img src= "Images/1.JPG"></p>
 
 ## Prerequisites
 An IBM Cloud account with access to IBM Cloud Pak for Data.
@@ -39,6 +40,7 @@ The script performs the following tasks:
 7. **Prediction Integration:** Integrates the predicted sales values into the "sales" column of the original testing data.
 8. **Exporting Results:** Exports the updated testing data with predicted sales values to a new Excel file.
 By running this script with your own testing data, you can leverage your deployed model to forecast future sales based on historical trends and patterns identified during training.
+<p><img src= "Images/2.JPG"></p>
 
 # Running the Script from Command Prompt
 This section explains how to execute the Python script to interact with your deployed Watson AutoAI model and get sales forecasts on new data using the command prompt:
