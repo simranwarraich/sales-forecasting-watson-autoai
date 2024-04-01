@@ -20,8 +20,8 @@ An IBM Cloud account with access to IBM Cloud Pak for Data.
 
 ## Steps
 1. **Sign up for Watson Studio:** Create an account on IBM Cloud Pak for Data (https://www.ibm.com/products/watson-studio).
-2.** Create a Project and Set Up AutoAI: **In Watson Studio, create a new project.Add a new AutoAI experiment to your project.Associate a Watson Machine Learning service with your project (create a new one if needed).
-3. **Upload Your Data and Choose the Target:** Upload your sales data set to Watson Studio. Select the target variable in your data set that represents the sales value you want to predict. For this project it's the "sales" column.
+2. **Create a Project and Set Up AutoAI:** In Watson Studio, create a new project. Add a new AutoAI experiment to your project. Associate a Watson Machine Learning service with your project (create a new one if needed).
+3. **Upload Your Data and Choose the Target:** Upload your sales data set to Watson Studio. Select the target variable in your data set that represents the sales value you want to predict. For this project it's the "Sales" column.
 4. **Run the AutoAI Experiment:** Start the AutoAI experiment. Watson AutoAI will automatically explore and analyze your data to find the best machine learning models for sales forecasting.
 5. **Evaluate Model Performance:** As the experiment runs, monitor the performance of the models being generated. AutoAI will continue to refine the models until they reach optimal performance.
 6. **Deploy Your AutoAI Model:** After the experiment is complete, select the best-performing model for deployment. Deploy the chosen model as a web service in Watson Studio. This allows you to make predictions on new data in real-time.
@@ -37,7 +37,7 @@ The script performs the following tasks:
 4. **Payload Creation:** Creates a payload in JSON format that encapsulates the prepared testing data for sending to the model.
 5. **Prediction Request:** Sends a POST request to the deployed model's endpoint, along with the payload containing the testing data.
 6. **Response Processing:** Receives the prediction response from the model and extracts the predicted sales values.
-7. **Prediction Integration:** Integrates the predicted sales values into the "sales" column of the original testing data.
+7. **Prediction Integration:** Integrates the predicted sales values into the "Sales" column of the original testing data.
 8. **Exporting Results:** Exports the updated testing data with predicted sales values to a new Excel file.
 By running this script with your own testing data, you can leverage your deployed model to forecast future sales based on historical trends and patterns identified during training.
 <p><img src= "Images/2.JPG"></p>
@@ -63,4 +63,5 @@ python sales-forecasting-with-python-automation-and-ml.ipynb
 **Additional Notes:**
 
 This approach assumes your deployed model is accessible through an API endpoint. If your deployment involves a different interaction method, the script might need adjustments.
+
 By following these steps, you can leverage your Python script to automate sales forecasting tasks using your deployed Watson AutoAI model from your desktop!.
